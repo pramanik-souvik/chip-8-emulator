@@ -31,3 +31,47 @@ This emulator fully implements the CHIP-8 CPU (~35 opcodes), graphics, input, an
 
 ```bash
 brew install sdl2
+```
+
+### Building 
+```bash
+git clone <your-repo-url>
+cd chip-8-emulator
+
+mkdir build
+cd build
+cmake ..
+make
+```
+
+### Running
+```bash
+# Run emulator and select ROM interactively
+./chip8
+
+# Or run with a specific ROM
+./chip8 ../roms/demos/Maze.ch8
+```
+
+### KeyBoard Mapping
+```bash
+1 2 3 C      1 2 3 4
+4 5 6 D      Q W E R
+7 8 9 E      A S D F
+A 0 B F      Z X C V
+```
+
+Press **ESC** to quit the emulator.
+
+## ROMs
+
+This emulator supports standard CHIP-8 ROMs. You can download additional ROMs from:
+
+[chip8-roms GitHub Repository](https://github.com/dmatlack/chip8)
+
+Thanks to **David Matlack** and contributors for providing these ROMs.
+
+## References
+
+- [How to Write a CHIP-8 Emulator](http://www.multigesture.net/articles/how-to-write-an-emulator-chip-8-interpreter/)  
+- [CHIP-8 on Wikipedia](http://en.wikipedia.org/wiki/CHIP-8)
