@@ -7,7 +7,7 @@ A CHIP-8 emulator written in **C++17** using **SDL2**. Play classic CHIP-8 games
 ![Interfce](doc/screenshots/interface.png "Interface")  
 *Interface*
 
-![CHIP8](doc/screenshots/chip8.png "CHIP8")  
+![CHIP8](doc/screenshots/CHIP8.png "CHIP8")  
 *CHIP8*
 
 ![Tank](doc/screenshots/tank.png "Tank")  
