@@ -35,7 +35,7 @@ brew install sdl2
 
 ### Building 
 ```bash
-git clone <your-repo-url>
+git clone <[https://github.com/pramanik-souvik/chip-8-emulator]>
 cd chip-8-emulator
 
 mkdir build
