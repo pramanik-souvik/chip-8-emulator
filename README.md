@@ -1,39 +1,33 @@
-# CHIP-8-Emulator
-A CHIP-8 emulator in C++
+# CHIP-8 Emulator
 
-![Space Invaders](doc/screenshots/invaders.png "Space Invaders")
+A CHIP-8 emulator written in **C++17** using **SDL2**. Play classic CHIP-8 games like Pong, Tetris, and Space Invaders directly on your computer.
+
+![Space Invaders](doc/screenshots/invaders.png "Space Invaders")  
 *Space Invaders*
 
-![Pong](doc/screenshots/pong.png "Pong")
+![Pong](doc/screenshots/pong.png "Pong")  
 *Pong*
 
-CHIP-8 is an interpretted programming language developed by Joseph Weisbecker in the mid 70s and was initally used on the COSMAC VIP and Telmac 1800 8-bit microcomputers to make game programming easier. CHIP-8 programs are run using a CHIP-8 virtual machine.
+CHIP-8 is an interpreted programming language developed by **Joseph Weisbecker** in the mid-1970s for 8-bit microcomputers such as the COSMAC VIP and Telmac 1800. It simplifies game programming by providing a virtual machine to run programs.
 
-This is a fairly complete implementation of a CHIP-8 virtual machine however there is currently no sound.
+This emulator fully implements the CHIP-8 CPU (~35 opcodes), graphics, input, and timers using SDL2.
 
-## Compiling and Running
+## Features
 
-Requires cmake and SDL2:
-```
-$ sudo apt-get install cmake libsdl2-dev
-```
+- Full CHIP-8 CPU emulation
+- 64x32 monochrome display with SDL2
+- 16-key hexadecimal input mapped to your keyboard
+- Delay and sound timers
+- Load and run `.ch8` ROM files
+- Simple and modular C++17 code structure for easy extension
 
-Compile:
-```
-$ mkdir build
-$ cd build
-$ cmake ..
-$ make
-```
+## Requirements
 
-Run:
-```
-./chip8 <ROM file>
-```
-23 (public domain) ROMs are included in the `roms` directory.
+- **C++17** compiler  
+- **SDL2**  
+- **CMake**
 
-## References
-Some helpful resources I used when writing this
+### Installing SDL2 on macOS
 
-- http://www.multigesture.net/articles/how-to-write-an-emulator-chip-8-interpreter/
-- http://en.wikipedia.org/wiki/CHIP-8
+```bash
+brew install sdl2
